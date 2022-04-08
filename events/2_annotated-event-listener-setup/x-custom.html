@@ -1,0 +1,17 @@
+<link
+    rel="import"
+    href="https://polygit.org/polymer+^1.9.1/webcomponentsjs+^0.7.0/iron-*+polymerelements+^1.0.0/components/iron-input/iron-input.html"
+/>
+<dom-module id="x-custom">
+    <template>
+        <button on-tap="handleTap">Kick Me</button>
+    </template>
+    <script>
+        Polymer({
+            is: "x-custom",
+            handleTap: function () {
+                alert("Ow!");
+            },
+        });
+    </script>
+</dom-module>
